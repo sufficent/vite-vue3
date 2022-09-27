@@ -20,6 +20,7 @@ import Main from "./components/main/index.vue";
   height: 100vh;
   display: flex;
   flex-direction: column;
+
   .layout-container {
     width: 100%;
     height: calc(100vh - 62px);
