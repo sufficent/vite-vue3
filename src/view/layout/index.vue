@@ -1,8 +1,9 @@
 <template>
   <div class="layout">
-    <Header />
+    <Aside />
+
     <div class="layout-container">
-      <Aside />
+      <Header />
       <Main />
     </div>
   </div>
@@ -19,13 +20,12 @@ import Main from "./components/main/index.vue";
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   .layout-container {
-    width: 100%;
-    height: calc(100vh - 62px);
-    display: flex;
-    justify-content: space-between;
+    flex: 1;
+    // width: 100%;
+    // height: 100vh;
   }
 }
 </style>

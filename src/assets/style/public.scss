@@ -1,0 +1,72 @@
+$text-color:#8A94A6;
+$title-color:#4E5D78;
+$active-color: #377DFF;
+$white-color:#ffffff;
+$black-color:#323B4B;
+$bg-color:#FAFBFC;
+$border-color:#F3F3F3;
+$active-bg-color:#F4F8FF;
+
+
+$font-family:'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','微软雅黑',Arial,sans-serif;
+
+$size-12: 12px;
+$size-14: 14px;
+$size-16: 16px;
+$size-18: 18px;
+
+$border: 1px solid $border-color;
+$border-radius:8px;
+
+
+
+// * flex 布局
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.text-hidden{
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+

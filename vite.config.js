@@ -19,7 +19,10 @@ export default defineConfig({
     // 引入全局 scss
     preprocessorOptions: {
       scss: {
-        additionalData: "@import './src/assets/style/normalize.scss';",
+        additionalData: `
+                         @import '@/assets/style/normalize.scss';
+                         @import '@/assets/style/public.scss';
+                         `,
       },
     },
   },

@@ -6,8 +6,8 @@
 
 <style lang="scss" scoped>
 .main {
+  height: calc(100vh - 62px);
   flex: 1;
-  color: #fff;
-  background: radial-gradient(ellipse at center, #2a2325 0%, #201d1e 100%);
+  color: $title-color;
 }
 </style>
