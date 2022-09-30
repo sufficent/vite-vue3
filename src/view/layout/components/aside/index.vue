@@ -4,10 +4,13 @@
       <img src="@/assets/vite.svg" alt="" />
       <span>Vite+Vue</span>
     </div>
+    <Menu />
   </el-aside>
 </template>
 
-<script setup></script>
+<script setup>
+import Menu from "./menu.vue";
+</script>
 
 <style lang="scss" scoped>
 .aside {

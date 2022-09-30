@@ -9,7 +9,8 @@
   width: 100%;
   height: 62px;
   line-height: 62px;
-  color: $white-color;
+  color: $title-color;
   text-align: center;
+  border: $border;
 }
 </style>

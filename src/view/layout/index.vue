@@ -1,7 +1,6 @@
 <template>
   <div class="layout">
     <Aside />
-
     <div class="layout-container">
       <Header />
       <Main />

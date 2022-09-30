@@ -3,27 +3,68 @@ import {
   createWebHistory,
   createWebHashHistory,
 } from "vue-router";
-
+import Layout from "../view/layout/index.vue";
+console.log(Layout);
 // 定义路由
 const routes = [
   {
     path: "/",
-    redirect: "/layout",
+    name: "Home",
+    component: Layout,
+    redirect: "/dashboard",
+    children: [
+      {
+        path: "dashboard",
+        name: "Dashbord",
+        component: () => import("@/view/dashboard/index.vue"),
+        meta: { title: "首页", icon: "House" },
+        children: [],
+      },
+    ],
   },
   {
-    path: "/layout",
-    name: "layout",
-    component: () => import("../view/layout/index.vue"),
+    path: "/project",
+    name: "Project",
+    component: Layout,
+    redirect: "/project",
+    children: [
+      {
+        path: "/project",
+        name: "project",
+        component: () => import("@/view/project/index.vue"),
+        meta: { title: "课题", icon: "Document" },
+        children: [],
+      },
+    ],
   },
   {
-    path: "/left",
-    name: "left",
-    component: () => import("../view/left/index.vue"),
-  },
-  {
-    path: "/right",
-    name: "right",
-    component: () => import("../view/right/index.vue"),
+    path: "/permission",
+    name: "Permission",
+    component: Layout,
+    redirect: "/permission/user",
+    children: [
+      {
+        path: "/user",
+        name: "User",
+        component: () => import("@/view/permission/user.vue"),
+        meta: { title: "用户", icon: "Document" },
+        children: [],
+      },
+      {
+        path: "/admin",
+        name: "Admin",
+        component: () => import("@/view/permission/admin.vue"),
+        meta: { title: "管理员", icon: "Document" },
+        children: [],
+      },
+      {
+        path: "/roles",
+        name: "Roles",
+        component: () => import("@/view/permission/roles.vue"),
+        meta: { title: "角色", icon: "Document" },
+        children: [],
+      },
+    ],
   },
 ];
 
